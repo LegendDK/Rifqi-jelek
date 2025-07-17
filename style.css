@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a334f5, #5727f5);
+    color: white;
+}
+  
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: linear-gradient(to right, #a334f5, #5727f5);
+}
+  
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+  
+.search-box {
+    flex: 1;
+    max-width: 400px;
+}
+  
+.search-box input[type="search"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+  
+.menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+  
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+.icons {
+    display: flex;
+    gap: 10px;
+}
+  
+.icons span {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+/* ===== BANNER ===== */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    background: linear-gradient(to right, #a334f5, #5727f5);
+}
+  
+.banner img {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+}
+  
+.text-content {
+    max-width: 400px;
+    color: white;
+}
+  
+.text-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+  
+.text-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.text-content button {
+    background: gold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.arrow {
+    display: none;
+}
+  
+/* ===== LAYANAN ===== */
+.layanan {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fef6ff;
+    color: black;
+    padding: 100px 20px;
+    gap: 20px;
+}
+  
+.box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    background: white;
+    padding: 50px 20px;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+  
+.icon {
+    background-color: gray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.text{
+    width: 70%;
+}
+
+.text h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+  
+.text p {
+    font-size: 13px;
+}
+  
+/* ===== PRODUK ===== */
+.produk-wrapper {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    color: black;
+}
+  
+.produk-title h5 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+  
+.produk-title h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+  
+.produk-title p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 14px;
+    color: #555;
+}
+  
+.produk-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+  
+.produk {
+    text-align: center;
+    width: 20%;
+}
+  
+.produk img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+  
+.produk p {
+    font-size: 14px;
+}
+  
+.produk a {
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: bold;
+}
+
+/* ===== PRODUK GRID ===== */
+.produk-grid {
+    background-color: #fef6ff;
+    padding: 60px 20px;
+    text-align: center;
+    color: black;
+}
+  
+.produk-grid-title h5 {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.produk-grid-title h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+  
+.produk-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  
+.produk-grid-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+    text-align: left;
+}
+  
+.produk-grid-item img {
+    width: 100%;
+    display: block;
+}
+  
+.produk-grid-item .text {
+    padding: 20px;
+}
+  
+.produk-grid-item .text h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+  
+.produk-grid-item .text p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+  
+.produk-grid-item .text a {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #f2ebff;
+    color: #a334f5;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+  
+.produk-grid-item.big {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+  
+.produk-grid-item.wide {
+    grid-column: span 2;
+    display: flex;
+}
+
+.produk-grid-item.small1{
+    background: url('img/iphone_xr_black-removebg-preview.png') no-repeat right top/cover;
+    background-size: 180px; 
+}
+
+.produk-grid-item.small2{
+    background: url('img/applewatch-removebg-preview.png') no-repeat right top/cover;
+}
+
+.produk-grid-item.wide img{
+    width: 70%;
+}
+
+/* ===== PRODUK Ke 2===== */
+.slider-section {
+    background: white;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+  
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+  
+.slider-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.slider-categories {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.slider-categories a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    position: relative;
+}
+  
+.slider-categories a.active {
+    color: purple;
+    font-weight: bold;
+}
+  
+.slider-products {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+  
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 50px;
+    width: 250px;
+    position: relative;
+}
+  
+.product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+  
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+  
+.product-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.cart-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #f7f0fb;
+    color: purple;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 16px;
+}
+  
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.slider-nav button {
+    border: none;
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+.main-footer {
+    background: #fdf0f9;
+    color: #333;
+    padding: 60px 20px 30px;
+    font-size: 14px;
+}
+  
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #3d0b99;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.footer-top::before, .footer-top::after {
+    content: "";
+    position: absolute;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+    border-radius: 50%;
+}
+  
+.footer-top::before {
+    width: 150px;
+    height: 150px;
+    top: -40px;
+    right: 80px;
+}
+  
+.footer-top::after {
+    width: 250px;
+    height: 250px;
+    bottom: -60px;
+    right: 20px;
+}
+  
+.footer-left h5 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+  
+.footer-left h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+  
+.footer-left p {
+    max-width: 400px;
+    color: #ccc;
+}
+  
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+  
+.footer-form input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 250px;
+}
+  
+.footer-form button {
+    padding: 10px 20px;
+    background: #ffbe2f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+  
+.footer-links h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-links ul li {
+    margin-bottom: 6px;
+    color: #666;
+}
+  
+.footer-bottom {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #888;
+}
+  
+.social-icons span {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #c8a2f0;
+    cursor: pointer;
+}
+  
+/* ===== RESPONSIVE ===== */
+@media (max-width: 750px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-box {
+      width: 100%;
+    }
+  
+    .menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .banner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .layanan {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .layanan .box{
+        width: 75%;
+    }
+  
+    .produk-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .produk{
+        width: 50%;
+    }
+
+    .produk-grid-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .produk-grid-item.wide {
+        grid-column: span 1;
+    }
+
+    .produk-grid-item.big{
+        grid-column: span 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .produk-grid-item.big img{
+        width: 200px;
+    }
+
+    .produk-grid-item.small1{
+        padding: 10px;
+        background: url('img/iphone_xr_black-removebg-preview.png') no-repeat right center/cover;
+        background-size: 300px;
+    }
+
+    .produk-grid-item.small2{
+        padding: 10px;
+        background: url('img/applewatch-removebg-preview.png') no-repeat right center/cover;
+    }
+}
+  
